@@ -1,8 +1,11 @@
 export class Drug {
-  constructor(name, expiresIn, benefit) {
+  constructor(name, expiresIn, benefit, evoExpiresIn, evoBenef, intervalEvoBenef) {
     this.name = name;
     this.expiresIn = expiresIn;
     this.benefit = benefit;
+    this.evoExpiresIn = evoExpiresIn;
+    this.evoBenef = evoBenef;
+    this.intervalEvoBenef = intervalEvoBenef;
   }
 }
 

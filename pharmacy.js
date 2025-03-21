@@ -21,6 +21,7 @@ export class Pharmacy {
     for (var i = 0; i < this.drugs.length; i++) {
       const drug = this.drugs[i];
       const { evoExpiresIn, evoBenef, intervalEvoBenef } = drug;
+      console.log(drug);
       const evoBenefValue = getEvolutionFactor(drug.expiresIn, evoBenef, intervalEvoBenef);
       drug.benefit += evoBenefValue;
       drug.expiresIn += evoExpiresIn;

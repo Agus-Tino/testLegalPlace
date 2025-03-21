@@ -5,7 +5,7 @@ import fs from "fs";
 const drugs = [
   new Drug("Doliprane", 20, 30, -1, [-1,-2], [Infinity, 0, -Infinity],  false),
   new Drug("Herbal Tea", 10, 5, -1, [1,2], [Infinity, 0, -Infinity],  false),
-  new Drug("Fervex", 12, 35, -1, [1,2,3], [Infinity, 10, 5, 0, -Infinity],  true),
+  new Drug("Fervex", 12, 35, -1, [1,2,3], [Infinity, 10, 5, -Infinity],  true),
   new Drug("Magic Pill", 15, 40, 0, [0], [Infinity, -Infinity],  false),
   new Drug("Dafalgan", 20, 20, -1, [-2, -4], [Infinity, 0, -Infinity],  false),
 ];

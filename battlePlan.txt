@@ -1,0 +1,24 @@
+1. Redefine the parameters of the class Drug so we can use new parameters to updateBenefitValue
+a. evoExpiresIn : evolution of the expiration date rate (-1 or 0)
+b. evoBenef : list a the evolution rate of the benefit per day related to which expiresIn we are ( [-1,-2])
+c. intervalEvoBenef: list with the intervals where the evoBenef values takes places ([Infinity, 0, -Infinity])
+d. zeroAfterExpires : boleean, true or false if zero after expires 
+
+link between evoBen and intervalEvoBenef : 
+with the exemple of the Doliprane : 
+evoBenef = [-1,-2]
+intervalEvoBenef = [Infinity, 0, -Infinity]
+
+when infinity  > expiresIn >= 0 : evoBenef = -1
+whem 0 > expiresIn > -Inifnity : evoBenef = -2
+
+
+2. Redefine the dynamic of the updateBenefitValue with the new parameters
+
+for each drugs:
+    we update the expiresIn 
+    we get the evoBenef (expiresIn) 
+    we apply the evoBenef to the benefit
+    we check the condition on zeroAfterExpires
+
+
